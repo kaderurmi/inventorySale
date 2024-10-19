@@ -69,6 +69,54 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 
 //------------------------------------------
+
+
+## Git Command 
+global user.name "Md Fazlul Kader"
+git config --global user.email "kadeurmi@gmail.com"
+git init
+git add READM
+git branch -M main
+git remote add origin https://github.com/kaderurmi/inventorySale.git
+git push -u origin main
+
+…or push an existing repository from the command line
+
+git remote add origin https://github.com/kaderurmi/inventorySale.git
+git branch -M main
+git push -u origin main
+git add .
+git commit -m "first commit"
+
 PHP ARTISAN VIEW:CLEAR
 php artisan cache:clear
 php artisan config:clear
+php artisan route:cache
+php artisan make:controller HomeController // create HomeController
+composer require barryvdh/laravel-dompdf //this is for PDF file support
+composer update firebase/php-jwt // Some Error come 
+php artisan make:controller ReportController  //for Controller create
+php artisan serve
+php artisan migrate //database Update
+php artisan optimize //Front end Update
+php artisan make:migration create_invoice_products // To create database table
+php artisan make:model Invoice // to Create model
+php artisan make:model Product -m // To create Product model and Database table
+php artisan route:list // to see Route List
+composer require firebase/php-jwt //to jwt firebase
+php artisan make:middleware TokenVerificationMiddleware // to create Middleware
+php artisan make:mail OTPMail // this is for mail folder and OTP SMTP
+php artisan migrate:fresh // To refresh database
+composer install // to composser Install
+php artisan make:controller Admin/CarController // Create controller inside Admin Folder
+composer require laravel/breeze --dev //to install breeze
+php artisan make:seeder UsersTableSeeder // To create a seeder file
+php artisan key:generate // for key generate
+php artisan migrate:fresh --seed  // to refresh database and seed
+php artisan migrate:refresh --seed
+php artisan db:seed  // To insert seed data to database
+php artisan storage:link // to ok link
+php artisan make:controller Admin/CustomerController --resource // Controller with resource
+git config --list //
+php artisan cache:table
+php artisan make:view components layouts //
