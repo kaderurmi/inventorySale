@@ -43,6 +43,10 @@ Route::get('/logout',[UserController::class,'UserLogout']);
 
 // // Page Routes
 Route::get('/',[HomeController::class,'HomePage']);
+Route::get('/about',[HomeController::class,'AboutPage']);
+Route::get('/company',[HomeController::class,'CompanyPage']);
+Route::get('/service',[HomeController::class,'ServicePage']);
+Route::get('/testimonial',[HomeController::class,'TestimonialPage']);
 Route::get('/userLogin',[UserController::class,'LoginPage']);
 Route::get('/userRegistration',[UserController::class,'RegistrationPage']);
 Route::get('/sendOtp',[UserController::class,'SendOtpPage']);
